@@ -4,7 +4,7 @@ require("dotenv").config();
 const path = require("path");
 
 const avatarRoutes = require("./routes/avatar");
-const port = 3002;
+const port = process.env.PORT || 3002;
 
 const app = express();
 
